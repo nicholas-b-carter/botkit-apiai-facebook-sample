@@ -14,7 +14,9 @@
   },
   "homepage": "https://github.com/houjunchen/botkit-apiai-facebook-sample#readme",
   "scripts": {
-    "start": "better-npm-run start"
+    "start": "better-npm-run start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "betterScripts": {
     "start": {
@@ -31,9 +33,11 @@
     "dashbot": "^0.7.3",
     "express": "^4.14.0",
     "localtunnel": "^1.8.1",
-    "request": "^2.74.0"
+    "request": "^2.74.0",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "better-npm-run": "0.0.11"
-  }
+  },
+  "snyk": true
 }
